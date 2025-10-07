@@ -1,6 +1,7 @@
 local KVP_KEY = "aura_blips"
 local activeBlips = {}
 local isAuthorized = false
+local blipsLoaded = false
 Blips = {}
 
 function Blips.SaveToKVP()
@@ -69,6 +70,8 @@ function Blips.UpdateAll()
 end
 
 function Blips.LoadAndCreateAll()
+    if blipsLoaded then return end
+    blipsLoaded = true
     Blips.LoadFromKVP()
     Blips.UpdateAll()
 end
@@ -153,17 +156,21 @@ RegisterNUICallback('getPlayerCoords', function(_, cb)
 end)
 
 CreateThread(function()
+    Wait(1000) 
     Blips.LoadAndCreateAll()
 end)
 
 RegisterNetEvent('esx:playerLoaded', function()
+    Wait(500)
     Blips.LoadAndCreateAll()
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    Wait(500)
     Blips.LoadAndCreateAll()
 end)
 
 AddEventHandler('playerSpawned', function()
+    Wait(500)
     Blips.LoadAndCreateAll()
 end)
