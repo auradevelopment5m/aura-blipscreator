@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Aura Development'
 description 'Aura Blips Creator UI'
-version '1.0.0'
+version '1.1'
 discord 'https://discord.gg/auradev'
 preview 'https://auradev.dev/blipscreator'
 documentation 'https://docs.auradev.dev/blipscreator'
