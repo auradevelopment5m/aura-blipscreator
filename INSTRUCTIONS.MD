@@ -96,8 +96,8 @@ Aura Blips Creator is a modern, user-friendly tool for FiveM servers that allows
 ## Support
 
 - **Discord:** https://discord.gg/2q8ZBSWPv7
-- **Preview:**
-- **Documentation:** https://docs.auradev.dev/blipscreator
+- **Preview:**https://www.youtube.com/watch?v=PxIXuiqbss8
+- **Documentation:** https://aura-development.gitbook.io/aura-development-docs/documentation/free-releases/aura_blipscreator
 
 ---
 
